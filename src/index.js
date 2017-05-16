@@ -149,7 +149,7 @@ class Orphanage extends Component {
   componentDidMount() {
     if (!canUseDOM) { return false }
 
-    const { isFontLoaded } = this.props
+    const { waitForFontLoad, isFontLoaded } = this.props
     const domEl = ReactDOM.findDOMNode(this.node)
 
     this.textElements = this.collectTextElements(domEl)
