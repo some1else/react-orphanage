@@ -1,6 +1,6 @@
 {
   "name": "react-orphanage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Justifies text to prevent orphaned words",
   "main": "lib/index.js",
   "repository": {
