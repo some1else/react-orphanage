@@ -1,0 +1,52 @@
+{
+  "name": "react-orphanage",
+  "version": "1.0.0",
+  "description": "Justifies text to prevent orphaned words",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/some1else/react-orphanage.git"
+  },
+  "scripts": {
+    "start": "node scripts/start.js",
+    "build": "NODE_ENV=production webpack -p"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "prop-types": "^15.5.10",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "babel-core": "6.22.1",
+    "babel-eslint": "7.1.1",
+    "babel-jest": "18.0.0",
+    "babel-loader": "6.2.10",
+    "babel-preset-react-app": "^2.2.0",
+    "babel-runtime": "^6.20.0",
+    "case-sensitive-paths-webpack-plugin": "1.1.4",
+    "cross-spawn": "4.0.2",
+    "dotenv": "2.0.0",
+    "fs-extra": "0.30.0",
+    "object-assign": "4.1.1",
+    "promise": "7.1.1",
+    "react-dev-utils": "^0.5.2",
+    "webpack": "1.14.0",
+    "webpack-dev-server": "1.16.2"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+  "author": "Srdjan Prodanovic <srdjan.prodanovic@gmail.com>",
+  "homepage": "http://github.com/some1else/react-orphanage",
+  "keywords": [
+    "typography",
+    "justification",
+    "orphans",
+    "react-component",
+    "react-dom",
+    "react",
+    "ui"
+  ]
+}
