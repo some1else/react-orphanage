@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import ReactDOM from 'react-dom'
-import { canUseDOM } from 'fbjs/lib/ExecutionEnvironment'
+import { canUseDOM } from 'exenv'
 
 const textTags = [
   'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
