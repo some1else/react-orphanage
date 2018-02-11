@@ -198,7 +198,7 @@ class Orphanage extends Component {
 
   render() {
     const {
-      children, className, waitForFontLoad, isFontLoaded, ...rest
+      children, className, waitForFontLoad, isFontLoaded, dispatch, ...rest
     } = this.props
         
     return (<div className={ className } ref={ this.setNodeRef } { ...rest }>
