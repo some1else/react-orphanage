@@ -8,6 +8,19 @@ const textTags = [
   'p',
 ]
 
+function flattenArrayOfArrays(array, result){
+  if (!result) { result = [] }
+  
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].constructor == Array) {
+      result.concat(flattenArrayOfArrays(array[i], result))
+    } else {
+      result.push(array[i])
+    }
+  }
+  return result
+}
+
 class Orphanage extends Component {
   
   static propTypes = {
@@ -152,7 +165,7 @@ class Orphanage extends Component {
     const { waitForFontLoad, isFontLoaded } = this.props
     const domEl = ReactDOM.findDOMNode(this.node)
 
-    this.textElements = this.collectTextElements(domEl)
+    this.textElements = flattenArrayOfArrays(this.collectTextElements(domEl))
 
     if ((waitForFontLoad == false) ||
         (isFontLoaded == true)) {
